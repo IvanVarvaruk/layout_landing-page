@@ -1,0 +1,37 @@
+.compare-bikes{
+  @include pageGrid;
+  @include constentPaddingInline();
+  &__title {
+    grid-column: 1 / -1;
+    margin-block: 92px 48px;
+
+    @include onTablet {
+      margin-block: 132px 48px;
+    }
+
+    @include onDesktop {
+      margin-block: 164px 56px;
+    }
+  }
+
+  &__card{
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: 2 / 6;
+    }
+
+    @include onDesktop {
+      grid-column: span 4;
+    }
+    &:not(::last-child){
+      margin-bottom: 40px;
+      @include onTablet{
+        margin-bottom: 48px;
+      }
+      @include onDesktop{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
