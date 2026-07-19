@@ -1,15 +1,15 @@
-.footer{
+.footer {
   background-image: url(../images/footer.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 200px;
 
-  @include onTablet{
+  @include on-tablet {
     height: 480px;
   }
 
-  @include onDesktop{
+  @include on-desktop {
     height: 555px;
   }
 }

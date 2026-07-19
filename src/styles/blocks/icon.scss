@@ -4,9 +4,9 @@
   width: 24px;
   background-size: cover;
 
-  @include hover (transform, scale(1.2));
+  @include hover(transform, scale(1.2));
 
-  @include onTablet{
+  @include on-tablet {
     height: 32px;
     width: 32px;
   }
@@ -15,8 +15,8 @@
     background-image: url(../icons/icon-phone.svg);
     color: $main-text-color;
 
-    @include onDesktop{
-      &::before{
+    @include on-desktop {
+      &::before {
         position: absolute;
         left: -158px;
 
@@ -35,7 +35,7 @@
         transition: opacity 0.3s;
       }
 
-      &:hover::before{
+      &:hover::before {
         opacity: 1;
       }
     }
@@ -45,7 +45,7 @@
     background-image: url(../icons/icon-burger-menu.svg);
     color: $main-text-color;
 
-    &:hover{
+    &:hover {
       background-image: url(../icons/icon-burger-menu-hover.svg);
     }
   }

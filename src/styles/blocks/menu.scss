@@ -1,14 +1,14 @@
 .menu {
   box-sizing: border-box;
   height: 100vh;
-  background-color: #C2C2C2;
+  background-color: #c2c2c2;
   color: $menu-text-color;
 
   font-weight: 700;
   text-transform: uppercase;
 
   &__content {
-    @include constentPaddingInline;
+    @include constent-padding-inline;
   }
 
   &__phone-number {
@@ -39,7 +39,7 @@
   &__top {
     margin-bottom: 32px;
 
-    @include onTablet{
+    @include on-tablet {
       margin-bottom: 0;
     }
   }
