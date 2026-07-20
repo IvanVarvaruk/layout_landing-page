@@ -1,5 +1,5 @@
 .card {
-  @include hover(transform, scale(1.2));
+  @include hover(transform, scale(1.1));
 
   &__img {
     margin-bottom: 32px;

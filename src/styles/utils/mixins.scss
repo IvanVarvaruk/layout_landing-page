@@ -38,16 +38,16 @@
 
 @mixin page-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(130px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 20px;
 
   @include on-tablet {
-    grid-template-columns: repeat(6, minmax(80px, 1fr));
+    grid-template-columns: repeat(6, 1fr);
     column-gap: 24px;
   }
 
   @include on-desktop {
-    grid-template-columns: repeat(12, minmax(63px, 1fr));
+    grid-template-columns: repeat(12, 1fr);
     column-gap: 24px;
   }
 }
